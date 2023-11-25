@@ -1,7 +1,32 @@
-import Image from 'next/image'
+import { Header } from "@/app/header/header";
+import { Navbar } from "@/components/common/navbar/navbar";
 
-export default function Home() {
+const menuItems = [
+	{
+	  name: "Service",
+	  path: "#",
+	},
+	{
+	  name: "About",
+	  path: "#",
+	},
+	{
+	  name: "Recruit",
+	  path: "#",
+	},
+	{
+	  name: "Contact",
+	  path: "#",
+	},
+  ];
+
+export default function LLMCourse() {
   return (
-    <p>top</p>
-  )
+    <>
+	  <Navbar menu={menuItems}></Navbar>
+      <Header />
+      <p>LLMコース</p>
+	  <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p> <p>LLMコース</p>
+    </>
+  );
 }
