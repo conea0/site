@@ -1,0 +1,137 @@
+.gradient {
+  background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(
+      at 67% 24%,
+      hsla(172, 100%, 50%, 0.18) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 31% 78%, hsla(289, 75%, 68%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 72% 59%, hsla(240, 100%, 70%, 0.49) 0px, transparent 50%),
+    radial-gradient(at 43% 44%, hsla(193, 100%, 50%, 0.55) 0px, transparent 50%);
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: move-gradient 0.5s infinite;
+}
+
+@keyframes move-gradient {
+  0% {
+    background-position: 67% 24%, 31% 78%, 62% 59%, 43% 44%;
+  }
+  25% {
+    background-position: 77% 34%, 21% 68%, 72% 69%, 33% 34%;
+  }
+  50% {
+    background-position: 87% 44%, 11% 58%, 82% 79%, 23% 24%;
+  }
+  75% {
+    background-position: 77% 34%, 21% 68%, 72% 69%, 33% 34%;
+  }
+  100% {
+    background-position: 67% 24%, 31% 78%, 62% 59%, 43% 44%;
+  }
+}
+
+.header {
+  text-align: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.cp {
+  max-width: 790px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  @media screen and (max-width: 780px) {
+    margin: 15% auto 0 auto;
+  }
+}
+
+.h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 100%;
+
+  @media screen and (max-width: 780px) {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.8rem;
+  }
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 5px;
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.2rem;
+  }
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 40px;
+  width: 100%;
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.button {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 780px) {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .gradient {
+    background-image: radial-gradient(
+        at 77% 24%,
+        hsla(172, 100%, 50%, 0.309) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 21% 78%,
+        hsla(289, 75%, 68%, 0.36) 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 62% 59%,
+        hsla(240, 100%, 70%, 0.36) 0px,
+        s transparent 50%
+      ),
+      radial-gradient(
+        at 43% 34%,
+        hsla(193, 100%, 50%, 0.55) 0px,
+        transparent 50%
+      );
+  }
+}
