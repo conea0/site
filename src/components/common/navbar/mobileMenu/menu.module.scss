@@ -14,6 +14,7 @@
   display: none;
 }
 
+
 .mobileMenuList {
   padding: 20px 0 0 60px;
   text-align: left;
@@ -36,10 +37,8 @@
 
 .sns {
   display: flex;
-  margin-top: 50px;
-  position: absolute;
-  bottom: 10px;
-  right: 0;
+  justify-content: end;
+  margin-top: 100px;
 
   li {
     margin: 0 10px;

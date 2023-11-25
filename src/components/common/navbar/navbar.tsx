@@ -15,6 +15,12 @@ export const Navbar = ({ menu }: Props) => {
 
   const toggleClass = () => {
     setIsActive((current) => !current);
+
+    if (isActive) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   };
 
   return (
