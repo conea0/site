@@ -1,5 +1,5 @@
 import { Button } from "@/components/button/button";
-import styles from "./header.styles";
+import styles from "./header.module.scss";
 
 export const Header = () => {
   return (
