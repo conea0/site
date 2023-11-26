@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
-import styles from "./button.module.scss";
+import styles from "./button.styles";
 
 interface ButtonProps {
   path: string;
@@ -18,19 +18,11 @@ export const Button = ({
   image,
   children,
 }: PropsWithChildren<ButtonProps>) => {
-  const handleClick = () => {
-    location.href = path;
-  };
-
   return (
-    <Link
-      href={path}
-      className={`${styles.buttonWrapper} ${styles[color]} ${styles[size]}`}
-      onClick={handleClick}
-    >
+    <Link href={path} className={styles({ size, color })}>
       {image ? (
         <Image
-          className={styles.img}
+          className="img"
           src={image as string}
           alt="button"
           width={16}

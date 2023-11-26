@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { MobileMenu } from "./mobileMenu/menu";
 import { OpenBtn } from "./mobileMenu/openBtn";
-import styles from "./navbar.module.scss";
+import styles from "./navbar.styles";
 import Link from "next/link";
 
 interface Props {
