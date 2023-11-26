@@ -5,6 +5,7 @@ import { useState } from "react";
 import { MobileMenu } from "./mobileMenu/menu";
 import { OpenBtn } from "./mobileMenu/openBtn";
 import styles from "./navbar.module.scss";
+import Link from "next/link";
 
 interface Props {
   menu: MenuItem[];
@@ -26,15 +27,15 @@ export const Navbar = ({ menu }: Props) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <a href="#">
+        <Link href="#">
           <Image src="/logo.png" alt="logo" width={25} height={25} />
-        </a>
+        </Link>
         <p>Conea</p>
       </div>
       <ul className={styles.menu}>
         {menu.map((menuItem) => (
           <li key={menuItem.name} className={styles.menuItem}>
-            <a href={menuItem.path}>{menuItem.name}</a>
+            <Link href={menuItem.path}>{menuItem.name}</Link>
           </li>
         ))}
       </ul>

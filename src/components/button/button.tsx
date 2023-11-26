@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { PropsWithChildren } from "react";
 import styles from "./button.module.scss";
 
@@ -22,7 +23,8 @@ export const Button = ({
   };
 
   return (
-    <div
+    <Link
+      href={path}
       className={`${styles.buttonWrapper} ${styles[color]} ${styles[size]}`}
       onClick={handleClick}
     >
@@ -36,6 +38,6 @@ export const Button = ({
         />
       ) : null}
       {children}
-    </div>
+    </Link>
   );
 };
