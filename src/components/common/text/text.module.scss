@@ -62,4 +62,11 @@
 .halfContainer {
   justify-content: flex-start;
   align-items: flex-start;
+  @media screen and (max-width: 780px) {
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align-last: center;
+    }
+  }
 }
