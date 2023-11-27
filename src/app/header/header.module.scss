@@ -6,7 +6,7 @@
       transparent 50%
     ),
     radial-gradient(at 31% 78%, hsla(289, 75%, 68%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 72% 59%, hsla(240, 100%, 70%, 0.49) 0px, transparent 50%),
+    radial-gradient(at 82% 59%, hsla(240, 100%, 70%, 0.49) 0px, transparent 50%),
     radial-gradient(at 43% 44%, hsla(193, 100%, 50%, 0.55) 0px, transparent 50%);
   text-align: center;
   padding: 20px;
@@ -15,13 +15,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: huerotator 15s infinite linear;
+  min-height: 700px;
 
   @media screen and (max-width: 780px) {
-  margin-top: 0;
-  height: 100vh;
+    margin-top: 0;
+    height: 100vh;
   }
 }
 
+@keyframes huerotator {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
 .wrapper {
   transform: translateY(5%);
 

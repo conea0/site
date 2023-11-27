@@ -18,7 +18,7 @@ export const Header = () => {
         </div>
 
         <div className={styles.button}>
-          <Button size="large" path="#" color="black" image="/logo-aqua.png">
+          <Button size="large" path="#" color="black" image="/logo-white.png">
             サービスを見る
           </Button>
           <Button size="large" path="#" color="white">
