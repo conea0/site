@@ -1,0 +1,60 @@
+.box {
+  align-items: center;
+  margin: 20px 0px;
+  width: 32%;
+
+  .img {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    justify-content: flex-start;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0 10px 10px;
+  transition: all 0.1s ease-in-out;
+
+  @media screen and (max-width: 900px) {
+    margin: 20px 10px 10px 30px;
+  }
+}
+
+.white {
+  background-color: none;
+  color: #000;
+}
+
+.black {
+  background-color: #343434;
+  color: #fff;
+}
+
+.whiteText {
+  color: #6f6f6f;
+}
+
+.blackText {
+  color: #fff;
+}
