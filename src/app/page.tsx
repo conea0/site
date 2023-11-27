@@ -69,6 +69,7 @@ export default function LLMCourse() {
             iconSize="normal"
             color="white"
             title={item.title}
+            key={item.title}
           >
             {item.children}
           </TextBox>
