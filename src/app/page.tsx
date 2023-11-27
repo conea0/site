@@ -77,11 +77,12 @@ export default function LLMCourse() {
       </FlexBox>
       <FlexBox>
         <Text
-          title={"hogehogehogehoge"}
+          title={"超クールなサービス"}
           text={
             "Static assets. API hosting. Serverless and Edge Functions. With a global network defined entirely by your code, you can focus on just that—the craft of coding."
           }
           width="half"
+          gradient
         >
           <Button path="#" color="black" size="large">
             こんにちは

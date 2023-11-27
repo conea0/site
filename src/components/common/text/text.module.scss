@@ -70,3 +70,25 @@
     }
   }
 }
+
+.h2Gradient {
+  color: #acb6e5; //非対応のブラウザでの文字色を設定
+  background: -webkit-linear-gradient(
+    0deg,
+    #acb6e5,
+    #86fde8
+  ); //背景色にグラデーションを指定
+  -webkit-background-clip: text; //テキストでくり抜く
+  background-clip: text;
+  -webkit-text-fill-color: transparent; //くり抜いた部分は背景を表示
+  animation: hue 7s infinite linear; //hueというアニメーションを指定
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg); //hue-rotateを0から360度にかけて変化させる
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
