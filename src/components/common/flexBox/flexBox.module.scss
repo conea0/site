@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 120px auto 0 auto;
+  max-width: 1200px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(105, 105, 105, 0.2);
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
