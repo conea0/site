@@ -12,6 +12,10 @@
   z-index: 999;
   border-bottom: 1px solid rgba(105, 105, 105, 0.2);
 
+  @media screen and (max-width: 780px) {
+    height: 70px;
+  }
+
   .logo {
     display: flex;
     align-items: center;
