@@ -61,7 +61,9 @@ export default function LLMCourse() {
           </Button>
         </Text>
       </Section>
-      <ImageBox image={"/screen/laptop.jpg"} width="full"></ImageBox>
+      <Section>
+        <ImageBox image={"/screen/laptop.jpg"} width="full"></ImageBox>
+      </Section>
       <FlexBox>
         {textBoxItems.map((item) => (
           <TextBox
